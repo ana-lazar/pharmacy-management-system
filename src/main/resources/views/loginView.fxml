@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="300.0" maxWidth="400.0" prefHeight="300.0" prefWidth="400.0" stylesheets="/styles/purple.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <Circle fill="#3c0085" layoutX="318.0" layoutY="53.0" radius="75.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#3c0085" layoutX="89.0" layoutY="180.0" radius="119.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#3c0085" layoutX="349.0" layoutY="209.0" radius="29.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="139.0" layoutY="61.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book Oblique" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="151.0" layoutY="110.0" style="-fx-border-radius: 25px; -fx-background-radius: 25px;" />
+      <TextField fx:id="passwordTextField" layoutX="151.0" layoutY="150.0" style="-fx-background-radius: 25px;" />
+      <Label layoutX="78.0" layoutY="115.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book Oblique" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="155.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Avenir Book Oblique" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="151.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="27.0" prefWidth="161.0" text="LOGIN" textFill="WHITE" />
+   </children>
+</AnchorPane>

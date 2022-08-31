@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="410.0" prefWidth="410.0" stylesheets="/styles/purple.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PharmacistController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c0085" height="319.0" layoutX="27.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 25px; -fx-arc-width: 25px;" width="355.0" />
+      <Label fx:id="orderLabel" layoutX="147.0" layoutY="31.0" text="ORDER #ID">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="91.0" text="Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="163.0" layoutY="91.0" text="current-status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="125.0" text="Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="164.0" layoutY="125.0" text="current-date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="159.0" text="User:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLabel" layoutX="164.0" layoutY="159.0" text="user-id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="drugsTableView" layoutX="69.0" layoutY="195.0" prefHeight="139.0" prefWidth="274.0">
+        <columns>
+          <TableColumn prefWidth="52.0" text="ID" />
+          <TableColumn prefWidth="64.0" text="NAME" />
+            <TableColumn prefWidth="78.0" text="QUANTITY" />
+            <TableColumn prefWidth="79.0" text="AVAILABLE" />
+        </columns>
+      </TableView>
+      <Button fx:id="acceptButton" layoutX="68.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleAcceptButton" prefHeight="27.0" prefWidth="274.0" text="Accept" />
+   </children>
+</AnchorPane>

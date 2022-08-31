@@ -1,0 +1,38 @@
+AnchorPane {
+    -fx-background-color: black;
+    -fx-font-family: Avenir;
+}
+
+.button {
+    -fx-background-color: #260054;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-radius:  25px;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-border-radius:  25px;
+    -fx-background-radius: 25px;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: #260054;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-radius:  25px;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #260055;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}

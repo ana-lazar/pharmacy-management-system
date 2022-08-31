@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/styles/purple.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PersonalController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c0085" height="275.0" layoutX="17.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 25px; -fx-arc-width: 25px;" width="566.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c0085" height="36.0" layoutX="17.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 25px; -fx-arc-width: 25px;" width="566.0" />
+      <Label fx:id="orderLabel" layoutX="241.0" layoutY="21.0" text="ORDER #ID">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="54.0" layoutY="82.0" text="Status: current-status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="246.0" layoutY="82.0" text="Date: current-date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLabel" layoutX="436.0" layoutY="82.0" text="Practitioner: user-id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="drugsTableView" layoutX="321.0" layoutY="155.0" prefHeight="142.0" prefWidth="237.0">
+        <columns>
+          <TableColumn prefWidth="52.0" text="ID" />
+          <TableColumn prefWidth="107.0" text="Name" />
+            <TableColumn prefWidth="77.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <TableView layoutX="40.0" layoutY="190.0" prefHeight="142.0" prefWidth="237.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="161.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="89.0" layoutY="120.0" text="Other medications">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="449.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="27.0" prefWidth="109.0" text="Cancel" />
+      <TextField fx:id="drugTextFideld" layoutX="42.0" layoutY="153.0" prefHeight="27.0" prefWidth="153.0" />
+      <Button fx:id="searchButton" layoutX="205.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="27.0" prefWidth="71.0" text="Search" />
+      <Button layoutX="408.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleRemoveDrug" text="Remove" />
+      <Button layoutX="233.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleAddDrug" text="Add " />
+      <Slider fx:id="quantitySlider" layoutX="109.0" layoutY="349.0" prefHeight="16.0" prefWidth="99.0" />
+      <Label layoutX="42.0" layoutY="349.0" text="Quantity:" />
+      <Button fx:id="saveButton" layoutX="329.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="27.0" prefWidth="109.0" text="Save" />
+      <Label layoutX="389.0" layoutY="120.0" text="Current order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
